@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script>
+        const member = [
+            { name:"山田太郎", age:42, hobby:"ギター" },
+            { name:"斉藤すぐる", age:46, hobby:"車" },
+            { name:"田中よしお", age:32, hobby:"旅行,カメラ" },
+            { name:"高橋とおる", age:25, hobby:"絵をかくこと" }
+        ];
+        member.forEach((value, index, array ) => {
+            document.write(array.value);
+        });
+        
+        
+let lists = [
+  { name:'ラーメン', price:680 },
+  { name:'チャーハン', price:500 },
+  { name:'味噌ラーメン', price:750 }
+];
+lists.forEach(( value ) => {
+  document.write( value.name,price );
+});
+    </script>
+</body>
+</html>

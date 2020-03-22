@@ -20,24 +20,16 @@
     <script>
 
         function onButtonClick(){
-            let select = document.form1.select;
-            let hand = select.value;
-            if( hand = 2 ){
+            const select = document.form1.select;
+            const num = select.selectedIndex;
+            const hand = document.form1.select.value;
+            if( hand === 1 ){
                 document.write ("勝ち");
-            } else if( hand = 3 ){
+            } else if( hand === 2 ){
                 document.write ("あいこ");
             } else {
                 document.write ("負け");
             }
-            
-        // if(select = choki){
-        //     document.write("勝ち");
-        // }else if(select = 2){
-        //     document.write("あいこ");
-        // }else {
-        //     document.write("負け");
-        // }
-
         }
     </script>
 </body>
