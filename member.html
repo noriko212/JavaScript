@@ -16,18 +16,11 @@
             { name:"高橋とおる", age:25, hobby:"絵をかくこと" }
         ];
         member.forEach((value, index, array ) => {
-            document.write(array.value);
+            document.write("名前：" + value.name + "、");
+            document.write("年齢：" + value.age + "、");
+            document.write("趣味：" + value.hobby + "<br>");
         });
         
-        
-let lists = [
-  { name:'ラーメン', price:680 },
-  { name:'チャーハン', price:500 },
-  { name:'味噌ラーメン', price:750 }
-];
-lists.forEach(( value ) => {
-  document.write( value.name,price );
-});
     </script>
 </body>
 </html>
