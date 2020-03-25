@@ -9,17 +9,19 @@
 </head>
 <body>
 
-    <textarea name="" id="txtArea" cols="30" rows="10"></textarea>
-    <p id="count"></p>
-    
+    <textarea name="" id="comment" cols="30" rows="10"></textarea>
+    <span><span id="count"></span>文字</span>
+
     <script>
-        function txtCount(txtArea){
-            let result = document.getElementById(txtArea).value.length;
-        document.write(result);
-        }
+    let count = document.getElementById("comment");
 
-       
+    count.addEventListener("onkeyup", function(){
+        let counter = document.getElementById("comment").value;
+        document.write(counter);
+        // document.getElementById("count").innerHTML = counter;
+    });
 
+        
     </script>
 </body>
 </html>
