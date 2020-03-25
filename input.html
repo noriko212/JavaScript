@@ -10,17 +10,22 @@
 <body>
 
     <textarea name="" id="comment" cols="30" rows="10"></textarea>
-    <p><span id="count"></span>文字</p>
+    <p><span id="count"></span></p>
 
     <script>
-const comment = document.getElementById("comment");
-const count = document.getElementById("count");
+        const comment = document.getElementById("comment");
+        const count = document.getElementById("count");
 
-document.getElementById("comment").onkeyup = onkeyup1;
+        document.getElementById("comment").onkeyup = onkeyup1;
 
-function onkeyup1(){
-    count.textContent = comment.value.length;
-}
+            function onkeyup1(){
+                const txtleng = comment.value.length;
+                if(txtleng <= 10){
+                    count.textContent = txtleng + ("文字");
+                }else{
+                    count.innerHTML = "<span style='color: red;''>10文字以下にしてください</span>";
+                }
+            }
 
 
     </script>
