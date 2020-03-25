@@ -10,18 +10,19 @@
 <body>
 
     <textarea name="" id="comment" cols="30" rows="10"></textarea>
-    <span><span id="count"></span>文字</span>
+    <p><span id="count"></span>文字</p>
 
     <script>
-    let count = document.getElementById("comment");
+const comment = document.getElementById("comment");
+const count = document.getElementById("count");
 
-    count.addEventListener("onkeyup", function(){
-        let counter = document.getElementById("comment").value;
-        document.write(counter);
-        // document.getElementById("count").innerHTML = counter;
-    });
+document.getElementById("comment").onkeyup = onkeyup1;
 
-        
+function onkeyup1(){
+    count.textContent = comment.value.length;
+}
+
+
     </script>
 </body>
 </html>
